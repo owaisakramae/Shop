@@ -1,258 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat');
-:root{
-    --primary-color: #fff;
-    --secondary-color:#ffc045;
-    --text-color:#3d2514;
-    --button-color: #bf2222;
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat");
+:root {
+  --primary-color: #fff;
+  --secondary-color: #ffc045;
+  --text-color: #3d2514;
+  --button-color: #bf2222;
 }
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    color: var(--text-color);
-    font-family: 'Bebas Neue', sans-serif;
+body {
+  color: var(--text-color);
+  font-family: "Bebas Neue", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 700;
+  margin: 0;
+}
+h2 {
+  font-size: 30px;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 16px;
+  font-family: "Alfa Slab One", cursive;
+}
+h4 {
+  font-size: 13px;
+  font-family: "Alfa Slab One", cursive;
+}
+h5 {
+  font-size: 12px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h6 {
+  font-size: 9px;
+  font-family: "Bebas Neue", sans-serif;
+}
+p {
+  font-size: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Alfa Slab One", cursive;
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: none;
+  color: var(--primary-color);
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
 
+/* flex classes Start*/
+.flex-1 {
+  flex: 1;
 }
-h1{
-    font-size: 50px;
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 700;
-    margin: 0;
-} 
-h2{
-    font-size: 30px;
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 700;
-    text-transform: uppercase;
+.d-flex {
+  display: flex;
 }
-h3{
-    font-size: 16px;
-    font-family: 'Alfa Slab One', cursive;
+.align-items-center {
+  align-items: center;
 }
-h4{
-    font-size: 13px;
-    font-family: 'Alfa Slab One', cursive;
+.justify-content-center {
+  justify-content: center;
 }
-h5{
-    font-size: 12px;
-    font-family: 'Bebas Neue', sans-serif;
+.justify-content-between {
+  justify-content: space-between;
 }
-h6{
-    font-size: 9px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-p{
-    font-size: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-button{
-    font-size: 20px;
-    display: inline-block;
-    font-family: 'Alfa Slab One', cursive;
-    background-color: var(--button-color);
-    text-transform: uppercase;
-    padding: 10px 30px;
-    border: none;
-    color:var(--primary-color)
-}
-.position-relative{
-    position: relative;
-}
-.position-absolute{
-    position: absolute;
-}
+/* flex classes end*/
 
 /* Header*/
-.header{
-    background-image: url(Newfolder/header1.png);
-    background-size: cover;
-    margin: 0;
-    padding-top: 30px;
-    padding-left: 20px;
+.header {
+  background-image: url(../images/header1.png);
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.container{
-    max-width: 1330px;
-    margin: 0 auto;
+.main-header {
+  margin-bottom: -70px;
+  padding-top: 20px;
 }
-.content{
-    display: flex;
-    justify-content: space-between;
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
 }
-.logo{
-    font-size: 20px;
+.content {
+  display: flex;
+  justify-content: space-between;
 }
-.logo span{
-    margin-left: 10px;
+.logo {
+  font-size: 20px;
 }
-.delivery{
-    font-size: 12px;
+.logo span {
+  margin-left: 10px;
 }
-.delivery span{
-    margin-left: 10px;    
+.delivery {
+  font-size: 12px;
 }
-.navigation{
-    display: flex;
-    justify-content: flex-end;
-    padding: 0;
+.delivery span {
+  margin-left: 10px;
 }
-.navigation li{
-    list-style: none;
-    padding-left: 25px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 16px;
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
 }
-
-.banner{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
+.navigation li {
+  list-style: none;
+  padding-left: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
 }
-.banner img{
-    width:640px;
-    height: 700px;
-    background-size: cover;
+.banner img {
+  width: 640px;
+  height: 700px;
+  background-size: cover;
 }
-.banner h6{
-    border: dotted black;
-    display: inline;
-    padding: 10px;
+.banner h6 {
+  border: dotted black;
+  display: inline;
+  padding: 10px;
 }
-.bannertext{
-    margin: 0;
+.bannertext {
+  margin: 0;
 }
-
 
 /*Banner1*/
-.newcontainer{
-    display: flex;
-    height: 400px;
-    justify-content: space-between;
-    padding: 40px 20px;
+.newcontainer {
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+  padding: 40px 20px;
 }
-.tryit{
-    background-image: url(Newfolder/Banner\ 1.png);
-    height: 400px;
-    border-radius: 10px;
-    width: 620px;
-    background-size: cover;
+.tryit {
+  background-image: url(Newfolder/Banner\ 1.png);
+  height: 400px;
+  border-radius: 10px;
+  width: 620px;
+  background-size: cover;
 }
-.bannercombine{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.bannercombine {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.banner2{
-    background-image: url(Newfolder/Banner\ 2.png);
-    height: 185px;
-    border-radius: 10px;
-    width: 620px;
-    background-size: cover;
+.banner2 {
+  background-image: url(Newfolder/Banner\ 2.png);
+  height: 185px;
+  border-radius: 10px;
+  width: 620px;
+  background-size: cover;
 }
-.banner3{
-    background-image: url(Newfolder/Banner\ 3.png);
-    height: 185px;
-    border-radius: 10px;
-    width: 620px;
-    background-size: cover;
+.banner3 {
+  background-image: url(Newfolder/Banner\ 3.png);
+  height: 185px;
+  border-radius: 10px;
+  width: 620px;
+  background-size: cover;
 }
-.textdisp{
-    font-size: 22px;
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--primary-color);
-    padding: 0px 20px;
-    line-height: 35px;
-    word-spacing: .2rem;
+.textdisp {
+  font-size: 22px;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--primary-color);
+  padding: 0px 20px;
+  line-height: 35px;
+  word-spacing: 0.2rem;
 }
-.textdisp span{
-    display: flex;
-    font-weight: 500;
-    font-size: 40px;
+.textdisp span {
+  display: flex;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 /*Button1*/
-.newbox{
-    text-align: center;
-    padding: 30px 30px 10px 30px;
+.newbox {
+  text-align: center;
+  padding: 30px 30px 10px 30px;
 }
-.box{
-    background-color: var(--secondary-color);
-    display: inline;
-    padding: 5px 15px;
-    font-size: 22px;
+.box {
+  background-color: var(--secondary-color);
+  display: inline;
+  padding: 5px 15px;
+  font-size: 22px;
 }
 
 /*Text*/
-.textcontainer{
-    text-align: center;
-    padding: 0 70px;
+.textcontainer {
+  text-align: center;
+  padding: 0 70px;
 }
-.textcontainer p{
-    margin-top: 0;
-    font-size: 16px;
-    line-height: 20px;
+.textcontainer p {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /*Burger*/
-.burgerimages{
-    display: flex;
-    justify-content: space-between;
-    height: 40vh;
+.burgerimages {
+  display: flex;
+  justify-content: space-between;
+  height: 40vh;
 }
 
 /*Desciption*/
-.disc h2{
-    font-size: 20px;
-    padding: 0px 50px;
+.disc h2 {
+  font-size: 20px;
+  padding: 0px 50px;
 }
-.disc p{
-    font-size: 16px;   
+.disc p {
+  font-size: 16px;
 }
-.orderbtn{
-    padding: 10px 10px 10px 80px;
+.orderbtn {
+  padding: 10px 10px 10px 80px;
 }
-.align{
-    padding-left: 100px;
+.align {
+  padding-left: 100px;
 }
-.alldisc{
-    display: flex;
-    justify-content: space-between;
+.alldisc {
+  display: flex;
+  justify-content: space-between;
 }
 
- 
-.postercont{
- 
-    display: flex;
-    background-color: var(--primary-color);
-    border: 1px solid #e2e2e2;
-    box-shadow: 5px 5px #e2e2e2;
- 
-    
+.postercont {
+  display: flex;
+  background-color: var(--primary-color);
+  border: 1px solid #e2e2e2;
+  box-shadow: 5px 5px #e2e2e2;
 }
-.upcomingevents{
-    padding: 30px 20px 30px 30px;
-    width:50%;
+.upcomingevents {
+  padding: 30px 20px 30px 30px;
+  width: 50%;
 }
-.upcomingevents p{
-    padding-top: 20px;
-    line-height: 30px;
-    font-size: 12px;
+.upcomingevents p {
+  padding-top: 20px;
+  line-height: 30px;
+  font-size: 12px;
 }
-.upcomingevents h5{
-    line-height: 10px;
+.upcomingevents h5 {
+  line-height: 10px;
 }
-.upcomingevents h5{
-    font-size: 30px;
+.upcomingevents h5 {
+  font-size: 30px;
 }
-.postercont img{
-    width: 50%;
-    padding: 20px;
+.postercont img {
+  width: 50%;
+  padding: 20px;
 }
-.circle{
-    display: flex;
-    position: absolute;
-    bottom: 20px;
-    padding: 30px ;
-    gap:8px;
+.circle {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  padding: 30px;
+  gap: 8px;
 }
