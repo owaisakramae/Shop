@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat"); 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ 
 :root {
   --primary-color: #fff;
   --secondary-color: #ffc045;
   --text-color: #3d2514;
   --button-color: #bf2222;
+  --shadow-color: #fee8bc;
 }
 * {
   margin: 0;
@@ -14,16 +17,16 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 h1 {
-  font-size: 50px;
+  font-size: 114px;
   font-family: "Alfa Slab One", cursive;
   font-weight: 700;
-  margin: 0;
 }
 h2 {
-  font-size: 30px;
+  font-size: 57px;
   font-family: "Alfa Slab One", cursive;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 30px;
 }
 h3 {
   font-size: 16px;
@@ -38,12 +41,15 @@ h5 {
   font-family: "Bebas Neue", sans-serif;
 }
 h6 {
-  font-size: 9px;
-  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  text-transform: uppercase;
+
 }
 p {
-  font-size: 5px;
+  font-size: 17px;
   font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
 }
 button {
   font-size: 20px;
@@ -62,6 +68,12 @@ button {
   position: absolute;
 }
 
+.shadow{
+  text-shadow: 4px 4px var(--shadow-color);
+}
+.border-radius{
+  border-radius: 10px;
+}
 /* flex classes Start*/
 .flex-1 {
   flex: 1;
@@ -78,159 +90,133 @@ button {
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-end{
+  justify-content: flex-end;
+}
+.align-items-top{
+  align-items: top;
+}
+.text-center{
+  text-align: center;
+}
 /* flex classes end*/
 
-/* Header*/
-.header {
-  background-image: url(../images/header1.png);
-  background-size: cover;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.main-header {
-  margin-bottom: -70px;
-  padding-top: 20px;
-}
 .container {
   max-width: 1330px;
   margin: 0 auto;
 }
-.content {
-  display: flex;
-  justify-content: space-between;
+
+/* Header*/
+.main-header {
+  background-image: url(../images/Rectangle.png);
+  background-size: cover;
+  min-height: 826px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.logo {
-  font-size: 20px;
+.header-wrapper{
+  padding-top: 54px ;
 }
-.logo span {
-  margin-left: 10px;
+.delivery p {
+  padding: 8px;
+  font-weight: 600;
 }
-.delivery {
-  font-size: 12px;
-}
-.delivery span {
-  margin-left: 10px;
-}
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
+.navigation{
+  gap: 85px;
 }
 .navigation li {
   list-style: none;
-  padding-left: 25px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 16px;
+  font-size: 21px;
 }
-.banner img {
-  width: 640px;
-  height: 700px;
-  background-size: cover;
+.banner-left{
+  padding-top: 80px;
+  height: 50vh;
 }
 .banner h6 {
-  border: dotted black;
+  border: dashed var(--text-color);
   display: inline;
-  padding: 10px;
+  padding: 10px 15px;
 }
-.bannertext {
-  margin: 0;
+.burger-image{
+  right: 5vw;
+}
+.orderbtn{
+  bottom: 30px;
+  left: 50px;
 }
 
 /*Banner1*/
-.newcontainer {
-  display: flex;
-  height: 400px;
-  justify-content: space-between;
-  padding: 40px 20px;
+.container1{
+  padding: 78px 60px 0px 90px ;
 }
-.tryit {
-  background-image: url(Newfolder/Banner\ 1.png);
-  height: 400px;
-  border-radius: 10px;
-  width: 620px;
+.banner1 {
+  background-image: url(../images/Burger\ Image.png);
+  height: 420px;
+  width: 600px;
   background-size: cover;
-}
-.bannercombine {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 .banner2 {
-  background-image: url(Newfolder/Banner\ 2.png);
-  height: 185px;
-  border-radius: 10px;
-  width: 620px;
+  background-image: url(../images/Burger\ Image2.png);
+  height: 192px;
+  width: 600px;
   background-size: cover;
+  margin-bottom: 36px;
 }
 .banner3 {
-  background-image: url(Newfolder/Banner\ 3.png);
-  height: 185px;
-  border-radius: 10px;
-  width: 620px;
+  background-image: url(../images/Burger\ Image3.png);
+  height: 192px;
+  width: 600px;
   background-size: cover;
 }
 .textdisp {
-  font-size: 22px;
+  font-size: 25px;
   font-family: "Bebas Neue", sans-serif;
   color: var(--primary-color);
-  padding: 0px 20px;
-  line-height: 35px;
+  padding:30px;
   word-spacing: 0.2rem;
+  line-height: 30px;
 }
 .textdisp span {
-  display: flex;
+  font-size: 42px;
   font-weight: 500;
   font-size: 40px;
+  flex-direction: column;
+  margin-bottom: 5px;
 }
 
-/*Button1*/
+/*Always tasty*/
 .newbox {
   text-align: center;
-  padding: 30px 30px 10px 30px;
+  padding-top: 70px;
 }
 .box {
   background-color: var(--secondary-color);
   display: inline;
-  padding: 5px 15px;
-  font-size: 22px;
+  padding: 10px 20px;
+  font-size: 25px;
 }
 
-/*Text*/
+/*Choose */
 .textcontainer {
   text-align: center;
-  padding: 0 70px;
+  font-size: 50px;
+  padding: 70px;
 }
 .textcontainer p {
-  margin-top: 0;
+  padding-top: 35px;
   font-size: 16px;
   line-height: 20px;
 }
 
 /*Burger*/
-.burgerimages {
-  display: flex;
-  justify-content: space-between;
-  height: 40vh;
+.burgercontainer{
+  padding-left: 25px;
 }
 
-/*Desciption*/
-.disc h2 {
-  font-size: 20px;
-  padding: 0px 50px;
-}
-.disc p {
-  font-size: 16px;
-}
-.orderbtn {
-  padding: 10px 10px 10px 80px;
-}
-.align {
-  padding-left: 100px;
-}
-.alldisc {
-  display: flex;
-  justify-content: space-between;
+/*Burger Desciption*/
+.burgername{
+  font-size: 38px;
+  padding-top: 36px;
 }
 
 .postercont {

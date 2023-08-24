@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resturant</title>
+    <title>Restaurant</title>
     <link href="./css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -14,18 +14,17 @@
     <header class="main-header">
       <div class="container">
         <div class="header-wrapper">
-          <div class="content">
+          <div class="content d-flex justify-content-between">
             <div class="logo">
-              <i class="fa-solid fa-burger"></i>
-              <span> Burger house</span>
+              <figure><img src="./images/Place Your Logo Here (Double Click to Edit).png" alt=""></figure>
             </div>
-            <div class="delivery">
-              <i class="fas fa-truck"></i>
-              <span>Express delivery +1 234 567 890</span>
+            <div class="delivery d-flex">
+              <figure><img src="./images/Vector Smart Object.png" alt=""></figure>
+              <p>Express delivery +1 234 567 890</p>
             </div>
           </div>
           <div class="navbar">
-            <ul class="navigation">
+            <ul class="navigation d-flex justify-content-end">
               <li>Home</li>
               <li>Menu</li>
               <li>Our story</li>
@@ -34,40 +33,44 @@
           </div>
         </div>
       </div>
-    </header>
     <section class="header">
       <div class="container">
-        <div class="banner d-flex align-items-center">
-          <div class="banner-left flex-1">
+        <div class="banner d-flex">
+          <div class="banner-left flex-1 position-relative">
             <h6>It is a good time for the great taste of burgers</h6>
-            <h1>BURGER</h1>
-            <h2>WEEK</h2>
-          </div>
-          <div class="banner-right flex-1">
-            <figure>
-              <img src="./images/header 2.png  " alt="resturent" width="100%" />
+            <h1 class="shadow">BURGER</h1>
+            <h2 class="shadow">WEEK</h2>
+            <div class="orderbtn position-absolute">
+                <button>order now</button>
+            </div>
+        </div>
+          <div class="banner-right flex-1 position-relative">
+            <figure class="position-absolute burger-image">
+              <img src="./images/Price1.png" alt="burgerimage" width="650px" height="540px" />
             </figure>
           </div>
+          
         </div>
       </div>
     </section>
-    <section class="banner1">
-      <div class="container">
-        <div class="newcontainer">
-          <div class="tryit">
+    </header>
+    <section class="banner">
+      <div class="container1">
+        <div class="newcontainer d-flex justify-content-between">
+          <div class="banner1 border-radius">
             <p class="textdisp">
-              Try it today <span>most popular burger</span>
+              Try it today <span class="d-flex">most popular burger</span>
             </p>
           </div>
           <div class="tryit1">
-            <div class="bannercombine">
-              <div class="banner2">
+            <div class="bannercombine ">
+              <div class="banner2 border-radius">
                 <p class="textdisp">
-                  Try it today <span>more fun</span><span>more taste</span>
+                  Try it today <span class="d-flex">more fun</span><span>more taste</span>
                 </p>
               </div>
-              <div class="banner3">
-                <p class="textdisp">Try it today <span>fresh & chilli</span></p>
+              <div class="banner3 border-radius">
+                <p class="textdisp">Try it today <span class="d-flex">fresh & chilli</span></p>
               </div>
             </div>
           </div>
@@ -95,30 +98,18 @@
       </div>
     </section>
     <section class="burger">
-      <div class="container">
-        <div class="burgerimages">
-          <img src="Newfolder/Burger1.png" alt="" />
-          <img src="Newfolder/Burger 2.png" alt="" />
-          <img src="Newfolder/burger 3.png" alt="" />
+      <div class="burgercontainer">
+        <div class="burgerimages d-flex justify-content-between">
+          <img src="./images/Burger.png" alt="" />
+          <img src="./images/Burger2.png" alt="" />
+          <img src="./images/Burger.png" alt="" />
         </div>
-        <div class="alldisc">
+        <div class="alldisc d-flex justify-content-between">
           <div class="disc">
-            <h2>Loreum Ispum Burger</h2>
+            <div class="burgername text-center">Loreum Ispum Burger</div>
             <p>Loreum Ispum very tasty burger prepared with</p>
-            <p class="align">australian cow meat</p>
-            <div class="orderbtn"><button>order now</button></div>
-          </div>
-          <div class="disc">
-            <h2>Loreum Ispum Burger</h2>
-            <p>Loreum Ispum very tasty burger prepared with</p>
-            <p class="align">australian cow meat</p>
-            <div class="orderbtn"><button>order now</button></div>
-          </div>
-          <div class="disc">
-            <h2>Loreum Ispum Burger</h2>
-            <p>Loreum Ispum very tasty burger prepared with</p>
-            <p class="align">australian cow meat</p>
-            <div class="orderbtn"><button>order now</button></div>
+            <p class="text-center">australian cow meat</p>
+            <div class="orderbtn text-center"><button>order now</button></div>
           </div>
         </div>
       </div>
